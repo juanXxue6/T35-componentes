@@ -1,0 +1,17 @@
+<h1><strong>Alta Cliente</strong></h1>
+
+<div>
+  <p>Nombre: <span><input type="text" [(ngModel)]="nombre"></span></p>
+  <p>CIF: <span><input type="text" [(ngModel)]="cif"></span></p>
+  <p>Direccion: <span><input type="text" [(ngModel)]="direccion" maxlength="30"></span></p>
+  <p>Grupo:
+    <span>
+      <select>
+        <option value="1" [(ngModel)]="grupo">1</option>
+        <option value="2" [(ngModel)]="grupo">2</option>
+      </select>
+    </span></p>
+    <p><input type="submit" (click)="cargarData()"></p>
+
+<app-datos [dataToShow]="datos"></app-datos>
+</div>
